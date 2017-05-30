@@ -8,32 +8,32 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
-
+class SaveFeedViewController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     
-   
+    
     var newsArray:[News] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
         setupTableViewDummyData()
-       
         
-       
+        
+        
         
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func setupTableView(){
-         self.tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
+        self.tableView.register(UINib(nibName: "FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
     }
     
     func setupTableViewDummyData(){
@@ -41,16 +41,16 @@ class FeedViewController: UIViewController {
         
         let news2:News = News(title: "Android", description: "5555+", iconImage: #imageLiteral(resourceName: "cat"), author: "แจ็ค", view: 9999, createDate: "29/06/60", New: "sport")
         
-         let news3:News = News(title: "IT", description: "Show", iconImage: #imageLiteral(resourceName: "rocket_icon2"), author: "อ่านต่อ", view: 99, createDate: "30/06/60", New: "IT")
+        let news3:News = News(title: "IT", description: "Show", iconImage: #imageLiteral(resourceName: "rocket_icon2"), author: "อ่านต่อ", view: 99, createDate: "30/06/60", New: "IT")
         
-         let news4:News = News(title: "ดูดวง", description: "แม่น", iconImage: #imageLiteral(resourceName: "dog"), author: "คลิกๆ", view: 99, createDate: "29/06/60", New: "🙏🏻")
+        let news4:News = News(title: "ดูดวง", description: "แม่น", iconImage: #imageLiteral(resourceName: "dog"), author: "คลิกๆ", view: 99, createDate: "29/06/60", New: "🙏🏻")
         
         
         newsArray.append(news)
         newsArray.append(news2)
         newsArray.append(news3)
         newsArray.append(news4)
-    
+        newsArray.append(news)
     }
     
     
@@ -64,18 +64,18 @@ class FeedViewController: UIViewController {
         
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
-extension FeedViewController: UITableViewDataSource,UITableViewDelegate{
+    extension SaveFeedViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -109,5 +109,4 @@ extension FeedViewController: UITableViewDataSource,UITableViewDelegate{
         self.toFeedDetaViewController(news: news)
     }
 }
-
 

@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  MyFinsProject
+//  MyFirstProject
 //
-//  Created by tanarat wuttipornpong on 29/5/60.
-//  Copyright © พ.ศ. 2560 tanarat wuttipornpong. All rights reserved.
+//  Created by IndyZa on 5/29/2560 BE.
+//  Copyright © 2560 IndyZaLab. All rights reserved.
 //
 
 import UIKit

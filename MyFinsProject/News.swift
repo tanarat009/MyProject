@@ -1,9 +1,9 @@
 //
 //  News.swift
-//  MyFinsProject
+//  MyFirstProject
 //
-//  Created by tanarat wuttipornpong on 29/5/60.
-//  Copyright © พ.ศ. 2560 tanarat wuttipornpong. All rights reserved.
+//  Created by IndyZa on 5/29/2560 BE.
+//  Copyright © 2560 IndyZaLab. All rights reserved.
 //
 
 import UIKit
@@ -11,17 +11,21 @@ import UIKit
 class News {
     var title:String
     var description:String
-    var iconImmge:UIImage
+    var iconImage:UIImage
     var author:String
     var view:Int
-    var createData:String
+    var createDate:String
+    var New:String
     
-    init(title: String, description:String,iconImmge:UIImage,author:String,view :Int,createData :String ) {
+    
+    init(title:String, description:String, iconImage:UIImage, author:String, view:Int, createDate:String,New:String) {
         self.title = title
         self.description = description
-        self.iconImmge = iconImmge
+        self.iconImage = iconImage
         self.author = author
         self.view = view
-        self.createData = createData
+        self.createDate = createDate
+        self.New = New
     }
+    
 }

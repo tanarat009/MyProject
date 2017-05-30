@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  MyFinsProject
+//  MyFirstProject
 //
-//  Created by tanarat wuttipornpong on 29/5/60.
-//  Copyright © พ.ศ. 2560 tanarat wuttipornpong. All rights reserved.
+//  Created by IndyZa on 5/29/2560 BE.
+//  Copyright © 2560 IndyZaLab. All rights reserved.
 //
 
 import UIKit
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "MyFinsProject")
+        let container = NSPersistentContainer(name: "MyFirstProject")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
